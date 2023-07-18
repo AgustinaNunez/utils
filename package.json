@@ -1,6 +1,6 @@
 {
   "name": "utils",
-  "version": "1.1.2",
+  "version": "1.1.0",
   "description": "a typescript-starter project",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -35,14 +35,16 @@
     "doc:json": "typedoc src/ --exclude **/*.spec.ts --target ES6 --mode file --json build/docs/typedoc.json",
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
     "version": "standard-version",
-    "version:tag": "version=$(node -p \"require('./package.json').version\") && git tag -a v$version -m \"Version $version\" && git push origin v$version",
+    "version:tag": "version=$(node -p \"require('./package.json').version\") && git tag -a $version -m \"Version $version\" && git push origin $version",
     "reset-hard": "git clean -dfx && git reset --hard && npm i",
     "prepare-release": "run-s reset-hard test cov:check doc:html version doc:publish"
   },
   "engines": {
     "node": ">=10"
   },
-  "dependencies": {},
+  "dependencies": {
+    "moment-timezone": "^0.5.43"
+  },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
