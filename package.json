@@ -1,6 +1,6 @@
 {
   "name": "utils",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "a typescript-starter project",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -35,6 +35,7 @@
     "doc:json": "typedoc src/ --exclude **/*.spec.ts --target ES6 --mode file --json build/docs/typedoc.json",
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
     "version": "standard-version",
+    "version:tag": "version=$(node -p \"require('./package.json').version\") && git tag -a v$version -m \"Version $version\" && git push origin v$version",
     "reset-hard": "git clean -dfx && git reset --hard && npm i",
     "prepare-release": "run-s reset-hard test cov:check doc:html version doc:publish"
   },
