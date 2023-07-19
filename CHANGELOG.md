@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/agustinanunez/utils/compare/v1.2.0...v1.4.0) (2023-07-19)
+
+
+### Features
+
+* **configs:** update scripts ([7629ef3](https://github.com/agustinanunez/utils/commit/7629ef3f0302f9f059f4a5cda1031d323c1157b4))
+
 ## [1.2.0](https://github.com/agustinanunez/utils/compare/v1.1.2...v1.2.0) (2023-07-18)
 
 
