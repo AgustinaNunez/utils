@@ -9,9 +9,11 @@
   "license": "MIT",
   "keywords": [],
   "scripts": {
-    "build": "run-p build:*",
-    "build:main": "tsc -p tsconfig.json",
-    "build:module": "tsc -p tsconfig.module.json",
+    "complete-build": "cp ./package.json ./README.md ./LICENSE ./CHANGELOG.md ./build/ ",
+    "clear-build": "rm -rf ./build ",
+    "build": "run-p build:* && run-s complete-build",
+    "build:main": "tsc -p tsconfig.json && run-s complete-build",
+    "build:module": "tsc -p tsconfig.module.json && run-s complete-build",
     "fix": "run-s fix:*",
     "fix:prettier": "prettier \"src/**/*.ts\" --write",
     "fix:lint": "eslint src --ext .ts --fix",
@@ -35,7 +37,7 @@
     "doc:json": "typedoc src/ --exclude **/*.spec.ts --target ES6 --mode file --json build/docs/typedoc.json",
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
     "version": "standard-version",
-    "version:tag": "version=$(node -p \"require('./package.json').version\") && git tag -a $version -m \"Version $version\" && git push origin $version",
+    "version:tag": "version=$(node -p \"require('./package.json').version\") && zip -r \"utils-v${version}.zip\" ./build && git tag -a v$version -f -F \"utils-v${version}.zip\" && git push origin $version && rm -rf \"utils-v${version}.zip\"",
     "reset-hard": "git clean -dfx && git reset --hard && npm i",
     "prepare-release": "run-s reset-hard test cov:check doc:html version doc:publish"
   },
