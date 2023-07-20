@@ -1,6 +1,6 @@
 {
   "name": "@agus/utils",
-  "version": "1.5.7",
+  "version": "1.5.9",
   "description": "a typescript-starter project",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

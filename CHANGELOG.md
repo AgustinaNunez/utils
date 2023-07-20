@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.9](https://github.com/AgustinaNunez/utils/compare/v1.5.7...v1.5.9) (2023-07-20)
+
+
+### Bug Fixes
+
+* **exports:** fix exports ([6cc416b](https://github.com/AgustinaNunez/utils/commit/6cc416b1285594fd743bc1437de8f8516085a37a))
+
 ### [1.5.7](https://github.com/AgustinaNunez/utils/compare/v1.5.5...v1.5.7) (2023-07-20)
 
 ### [1.5.5](https://github.com/AgustinaNunez/utils/compare/v1.5.3...v1.5.5) (2023-07-20)
