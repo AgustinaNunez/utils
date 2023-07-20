@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.5](https://github.com/AgustinaNunez/utils/compare/v1.5.3...v1.5.5) (2023-07-20)
+
 ### [1.5.3](https://github.com/AgustinaNunez/utils/compare/v1.5.1...v1.5.3) (2023-07-20)
 
 
