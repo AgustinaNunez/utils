@@ -14,6 +14,6 @@ const formatDateWithTimezone = (dateToFormat: string, timezoneUser: string): str
   return dateWithTimezone.format('DD-MM-YYYY HH:mm:ss')
 }
 
-export default {
+export {
   formatDateWithTimezone,
 }

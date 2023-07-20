@@ -1,1 +1,1 @@
-export { default as fechas } from './lib/formatter/dates'
+export * from './lib/formatter/dates'
