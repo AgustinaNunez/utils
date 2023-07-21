@@ -8,4 +8,5 @@ coverage
 *.log
 yarn.lock
 *.zip
-dist
+dist/lib
+.DS_Store

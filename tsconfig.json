@@ -1,11 +1,21 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
-    "outDir": "dist",
+    // Default
+    "target": "es5", 
+    "esModuleInterop": true, 
+    "forceConsistentCasingInFileNames": true,
+    "strict": true, 
+    "skipLibCheck": true,
+
+    // Added
+    "module": "ESNext",  
     "declaration": true,
-    "strict": true,
-    "esModuleInterop": true
-  },
-  "include": ["src"]
+    "declarationDir": "types",
+    "sourceMap": true,
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": true,
+  }
 }
