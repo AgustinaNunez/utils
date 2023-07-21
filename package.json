@@ -1,9 +1,10 @@
 {
   "name": "@agus/utils",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Utils library",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "version:tag": "version=$(node -p \"require('./package.json').version\") && git tag -d v$version || true && git tag -a v$version  -m \"Versión $version\" && git push origin v$version"
   },
   "author": "Agustina Nuñez",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "moment-timezone": "^0.5.43",
     "rollup": "^2.60.0",
     "rollup-plugin-dts": "^4.0.1",
+    "tslib": "^2.6.0",
     "typescript": "^4.4.4"
   },
   "main": "dist/cjs/index.js",
@@ -22,8 +24,6 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "tslib": "^2.6.0"
-  },
+  "dependencies": {},
   "types": "dist/index.d.ts"
 }
