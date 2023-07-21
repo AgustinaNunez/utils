@@ -1,1 +1,1 @@
-export { default as dates } from './dates'
+export { formatDateWithTimezone } from './dates'
