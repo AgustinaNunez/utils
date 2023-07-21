@@ -1,6 +1,6 @@
 {
   "name": "@agus/utils",
-  "version": "1.6.7",
+  "version": "1.6.8",
   "description": "Utils library",
   "scripts": {
     "rollup": "rm -rf ./dist && rollup -c",
