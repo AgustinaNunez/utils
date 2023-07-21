@@ -26,7 +26,11 @@ export default [
       commonjs(),
       json(),
       typescript({ tsconfig: './tsconfig.json' }),
-      dts(),
     ],
+  },
+  {
+    input: 'src/index.ts',
+    output: [{ file: 'dist/index.d.ts', format: 'es' }],
+    plugins: [dts()],
   },
 ];
