@@ -11,14 +11,17 @@ yarn install
 #### Subir cambios a la librería
 1. Realizar los cambios en *./src*
 
-2. Ejecutar este comando para actualizar el build que está en *./dist*:
-```yarn rollup```. 
-> El build se realiza usando el bundler [**rollup**](https://rollupjs.org/) siguiendo las configuraciones que están en *rollup.config.ts*. Por el momento se genera el build para poder usar la librería tanto con CommonJS o ES Modules.
->
+2. Realizar el build:
+```
+yarn rollup
+``` 
+> Esto actualiza el build que está en *./dist* y es el que se usa cuando se importa desde un repositorio. 
+> 
+> El build se realiza usando el bundler [**rollup**](https://rollupjs.org/) siguiendo las configuraciones que están en *rollup.config.ts*. Está configurado para que se genere el build tanto para CommonJS como ES Modules.
 > 
 
-3. Subir los cambios a **main**
-4. Generar un nuevo tag ```yarn run tag```
+1. Subir los cambios a **main**
+2. Generar un nuevo tag ```yarn run tag```
 
 
 ## 💅 Usar la librería
