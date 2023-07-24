@@ -4,22 +4,26 @@ import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
 import json from '@rollup/plugin-json';
 
-const packageJson = require('./package.json');
+const packageJson = require('./package.json')
+
+const outputEsm = {
+  file: packageJson.module,
+  format: 'esm',
+  sourcemap: true,
+}
+
+const outputCjs = {
+  file: packageJson.main,
+  format: 'cjs',
+  sourcemap: true,
+}
 
 export default [
   {
     input: 'src/index.ts',
     output: [
-      {
-        file: packageJson.main,
-        format: 'cjs',
-        sourcemap: true,
-      },
-      // {
-      //   file: packageJson.module,
-      //   format: 'esm',
-      //   sourcemap: true,
-      // },
+      outputCjs,
+      outputEsm,
     ],
     plugins: [
       resolve(),

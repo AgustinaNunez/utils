@@ -1,7 +1,3 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
 function commonjsRequire (path) {
@@ -7263,5 +7259,5 @@ var formatDateWithTimezone = function (dateToFormat, timezoneUser) {
     return dateWithTimezone.format('DD-MM-YYYY HH:mm:ss');
 };
 
-exports.formatDateWithTimezone = formatDateWithTimezone;
+export { formatDateWithTimezone };
 //# sourceMappingURL=index.js.map
