@@ -2,7 +2,6 @@
   "name": "@agus/utils",
   "version": "1.6.10",
   "description": "Utils library",
-  "type": "module",
   "scripts": {
     "rollup": "rm -rf ./dist && rollup -c",
     "tag": "./scripts/tag.sh"
