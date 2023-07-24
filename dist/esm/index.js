@@ -7259,10 +7259,10 @@ var formatDateWithTimezone = function (dateToFormat, timezoneUser) {
     return dateWithTimezone.format('DD-MM-YYYY HH:mm:ss');
 };
 
-var index = /*#__PURE__*/Object.freeze({
+var dates = /*#__PURE__*/Object.freeze({
 	__proto__: null,
 	formatDateWithTimezone: formatDateWithTimezone
 });
 
-export { index as dates };
+export { dates };
 //# sourceMappingURL=index.js.map

@@ -6,11 +6,11 @@
  */
 declare const formatDateWithTimezone: (dateToFormat: string, timezoneUser: string) => string;
 
-declare const index_formatDateWithTimezone: typeof formatDateWithTimezone;
-declare namespace index {
+declare const dates_formatDateWithTimezone: typeof formatDateWithTimezone;
+declare namespace dates {
   export {
-    index_formatDateWithTimezone as formatDateWithTimezone,
+    dates_formatDateWithTimezone as formatDateWithTimezone,
   };
 }
 
-export { index as dates };
+export { dates };
