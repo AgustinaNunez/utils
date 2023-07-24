@@ -20,8 +20,11 @@ yarn rollup
 > El build se realiza usando el bundler [**rollup**](https://rollupjs.org/) siguiendo las configuraciones que están en *rollup.config.ts*. Está configurado para que se genere el build tanto para CommonJS como ES Modules.
 > 
 
-1. Subir los cambios a **main**
-2. Generar un nuevo tag ```yarn run tag```
+3. Subir los cambios a **main**
+4. Generar un nuevo tag 
+```
+yarn run tag
+```
 
 
 ## 💅 Usar la librería
