@@ -35,7 +35,7 @@ yarn add git+https://github.com/AgustinaNunez/utils.git#v1.6.10
 > ```
 > rm -rf ./node_modules/@agus && \
 > yarn cache clean && \
-> yarn add git+https:/...
+> yarn add git+https://github.com/AgustinaNunez/utils.git
 > ```
 
 Ejemplo de uso con ES Modules:
