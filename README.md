@@ -13,7 +13,7 @@ yarn install
 
 2. Realizar el build:
 ```
-yarn rollup
+yarn build
 ``` 
 > Esto actualiza el build que está en *./dist* y es el que se usa cuando se importa desde un repositorio. 
 > 

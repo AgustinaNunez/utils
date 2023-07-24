@@ -3,7 +3,7 @@
   "version": "1.6.10",
   "description": "Utils library",
   "scripts": {
-    "rollup": "rm -rf ./dist && rollup -c",
+    "build": "rm -rf ./dist && rollup -c",
     "tag": "./scripts/tag.sh"
   },
   "author": "Agustina Nuñez",
