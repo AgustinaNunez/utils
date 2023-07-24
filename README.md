@@ -39,7 +39,7 @@ yarn add git+https://github.com/AgustinaNunez/utils.git#v1.6.10
 > ```
 
 Ejemplo de uso con ES Modules:
-```
+```javascript
 import { dates } from '@agus/utils'
 ...
 const dateToFormat = '2000-05-30 10:00:00'
