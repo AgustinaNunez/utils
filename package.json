@@ -1,15 +1,18 @@
 {
-  "name": "@agus/utils",
+  "name": "@asofix/utils",
   "version": "1.6.10",
   "description": "Utils library",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c",
     "tag": "./scripts/tag.sh",
     "test": "jest --verbose --runInBand",
+    "cov": "./scripts/coverage.sh",
+    "coverage": "jest --coverage && open coverage/lcov-report/index.html",
+    "coverage:win": "jest --coverage && start coverage/lcov-report/index.html",
     "lint": "eslint src/**/*.ts",
-    "lint:fix": "yarn lint --fix",
+    "lint:fix": "npm run lint --fix",
     "doc:html": "typedoc src/ --out dist/docs",
-    "doc": "yarn doc:html && open-cli dist/docs/index.html"
+    "doc": "npm run doc:html && open-cli dist/docs/index.html"
   },
   "author": "Agustina Nuñez",
   "license": "ISC",

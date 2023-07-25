@@ -1,7 +1,6 @@
 # @asofix/utils
 
 ## Contenido
-
 - [@asofix/utils](#asofixutils)
   - [Contenido](#contenido)
   - [Introducción](#introducción)
@@ -25,8 +24,9 @@
 Antes de trabajar en la librería, es necesario establecer un entorno adecuado. 
 
 #### Requisitos
-- Node.js ^16.20.0
-- yarn
+- node.js ^16.20.0
+- yarn o npm
+- bash (o un shell para ejecutar los scripts que hay en el *package.json*)
 
 #### Pasos iniciales
 Clone el repositorio y luego instale las dependencias:
@@ -57,6 +57,15 @@ Los tests están hechos en Jest. Para ejecutarlos ejecutamos
 ```bash
 yarn test
 ```
+Visualizar la cobertura de los tests:
+```bash
+yarn coverage
+```
+
+> En linux o mac puede ocurrir que no tengas permisos para ejecutarlo, para solucionarlo:
+> ```
+> chmod +x coverage.sh
+> ```
 
 ### ESlint
 Para poder ejecutar este comando correctamente hay que tener al menos la versión **16.20.0** de node
@@ -89,15 +98,16 @@ yarn add git+https://github.com/AgustinaNunez/utils.git#v1.6.10
 
 > **⚠️ WORKAROUND**: por el momento, si se quiere utilizar una versión nueva de la librería hay que hacer esto: 
 > ```bash
-> rm -rf ./node_modules/@agus && \
+> rm -rf ./node_modules/@asofix && \
 > yarn cache clean && \
 > yarn add git+https://github.com/AgustinaNunez/utils.git
 > ```
 
 ### Ejemplo de uso
-Ejemplo de uso con ES Modules:
+Ejemplo de uso:
 ```javascript
-import { dates } from '@agus/utils'
+import { dates } from '@asofix/utils' // con ES modules
+// const { dates } = require('@asofix/utils'); // con Common.js
 ...
 const dateToFormat = '2000-05-30 10:00:00'
 const timezoneUser = 'Europe/Paris'
