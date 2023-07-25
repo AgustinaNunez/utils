@@ -6069,7 +6069,7 @@ var moment$1 = {exports: {}};
 			zoneScore, i, j;
 
 		for (i = 0; i < guesses.length; i++) {
-			zoneScore = new ZoneScore(getZone(guesses[i]));
+			zoneScore = new ZoneScore(getZone(guesses[i]), offsetsLength);
 			for (j = 0; j < offsetsLength; j++) {
 				zoneScore.scoreOffsetAt(offsets[j]);
 			}
@@ -7253,9 +7253,15 @@ var momentTimezone = momentTimezone$2.exports;
 var DB_DATE_FORMAT = 'YYYY-MM-DD HH:mm:ss';
 /**
  * Obtiene la fecha y hora en UTC en la zona horaria especificada
- * @param {string} dateToFormat e.g. '2000-05-30 10:00:00'
- * @param {string} timezoneUser e.g. 'Europe/Paris'
- * @returns string e.g. '2000-05-30 12:00:00'
+ * @param {string} dateToFormat - Fecha a formatear en formato 'YYYY-MM-DD HH:mm:ss'
+ * @param {string} timezoneUser - La timezone a aplicar a la fecha.
+ * @return {string} La fecha formateada en 'DD-MM-YYYY HH:mm:ss' para la timezone especificada.
+ * @example
+ * const dateToFormat = '2000-05-30 10:00:00';
+ * const timezoneUser = 'Europe/Paris';
+ * const formattedDate = formatDateWithTimezone(dateToFormat, timezoneUser);
+ * console.log(formattedDate);
+ * // Salida: '30-05-2000 12:00:00'
  */
 var formatDateWithTimezone = function (dateToFormat, timezoneUser) {
     var dateUTC = momentTimezone.utc(dateToFormat, DB_DATE_FORMAT);
