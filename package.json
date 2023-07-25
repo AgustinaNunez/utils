@@ -38,6 +38,9 @@
     "typedoc": "^0.24.8",
     "typescript": "^5.1.6"
   },
+  "engines": {
+    "node": ">=16.20.0"
+  },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
