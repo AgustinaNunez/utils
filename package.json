@@ -4,9 +4,9 @@
   "description": "Utils library",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c",
-    "tag": "./scripts/tag.sh",
+    "tag": "sh ./scripts/tag.sh",
     "test": "jest --verbose --runInBand",
-    "cov": "./scripts/coverage.sh",
+    "cov": "sh ./scripts/coverage.sh",
     "coverage": "jest --coverage && open coverage/lcov-report/index.html",
     "coverage:win": "jest --coverage && start coverage/lcov-report/index.html",
     "lint": "eslint src/**/*.ts",
