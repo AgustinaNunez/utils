@@ -6,7 +6,7 @@
     "build": "rm -rf ./dist && rollup -c",
     "tag": "sh ./scripts/tag.sh",
     "test": "jest --verbose --runInBand",
-    "cov": "sh ./scripts/coverage.sh",
+    "coverage": "sh ./scripts/coverage.sh",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "npm run lint --fix",
     "doc": "sh ./scripts/doc.sh"
