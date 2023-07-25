@@ -7,12 +7,9 @@
     "tag": "sh ./scripts/tag.sh",
     "test": "jest --verbose --runInBand",
     "cov": "sh ./scripts/coverage.sh",
-    "coverage": "jest --coverage && open coverage/lcov-report/index.html",
-    "coverage:win": "jest --coverage && start coverage/lcov-report/index.html",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "npm run lint --fix",
-    "doc:html": "typedoc src/ --out dist/docs",
-    "doc": "npm run doc:html && open-cli dist/docs/index.html"
+    "doc": "sh ./scripts/doc.sh"
   },
   "author": "Agustina Nuñez",
   "license": "ISC",
