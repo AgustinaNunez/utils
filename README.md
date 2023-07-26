@@ -26,6 +26,7 @@ Principales funciones que incluye:
 ## Links útiles
 - [ID-30769: Deuda técnica](https://grupotagle.atlassian.net/browse/ID-30769)
 - [Ver lista de tareas pendientes](./TODO.md)
+- [Repositorio inicial](https://github.com/AgustinaNunez/utils)
 
 ## ✍️ Desarrollo
 ### Configuración Inicial

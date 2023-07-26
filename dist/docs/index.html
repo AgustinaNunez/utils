@@ -16,6 +16,7 @@
 <li><a href="#asofixutils">@asofix/utils</a><ul>
 <li><a href="#contenido">Contenido</a></li>
 <li><a href="#introducci%C3%B3n">Introducción</a></li>
+<li><a href="#links-%C3%BAtiles">Links útiles</a></li>
 <li><a href="#%EF%B8%8F-desarrollo">✍️ Desarrollo</a><ul>
 <li><a href="#configuraci%C3%B3n-inicial">Configuración Inicial</a><ul>
 <li><a href="#requisitos">Requisitos</a></li>
@@ -36,7 +37,16 @@
 </ul>
 </li>
 </ul>
-<a id="md:introducción" class="tsd-anchor"></a><h2><a href="#md:introducción">Introducción</a></h2><p>@asofix/utils es una librería creada específicamente para el proyecto asofix y está construida usando Typescript. Facilita la integración y uso de múltiples utilidades en el ecosistema asofix.</p>
+<a id="md:introducción" class="tsd-anchor"></a><h2><a href="#md:introducción">Introducción</a></h2><p>@asofix/utils es una librería creada específicamente para el proyecto asofix y está construida usando Typescript. Facilita la integración y uso de múltiples utilidades en el ecosistema asofix.
+Principales funciones que incluye:</p>
+<ul>
+<li>operaciones con fechas</li>
+<li>cálculos</li>
+</ul>
+<a id="md:links-útiles" class="tsd-anchor"></a><h2><a href="#md:links-útiles">Links útiles</a></h2><ul>
+<li><a href="https://grupotagle.atlassian.net/browse/ID-30769">ID-30769: Deuda técnica</a></li>
+<li><a href="../TODO.md">Ver lista de tareas pendientes</a></li>
+</ul>
 <a id="md:✍️-desarrollo" class="tsd-anchor"></a><h2><a href="#md:✍️-desarrollo">✍️ Desarrollo</a></h2><a id="md:configuración-inicial" class="tsd-anchor"></a><h3><a href="#md:configuración-inicial">Configuración Inicial</a></h3><p>Antes de trabajar en la librería, es necesario establecer un entorno adecuado. </p>
 <a id="md:requisitos" class="tsd-anchor"></a><h4><a href="#md:requisitos">Requisitos</a></h4><ul>
 <li>node.js ^16.20.0</li>
@@ -96,8 +106,7 @@
 <pre><code class="language-bash"><span class="hl-0">rm</span><span class="hl-1"> </span><span class="hl-4">-rf</span><span class="hl-1"> </span><span class="hl-2">./node_modules/@asofix</span><span class="hl-1"> &amp;&amp; </span><span class="hl-5">\</span><br/><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">cache</span><span class="hl-1"> </span><span class="hl-2">clean</span><span class="hl-1"> &amp;&amp; </span><span class="hl-5">\</span><br/><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">add</span><span class="hl-1"> </span><span class="hl-2">git+https://github.com/AgustinaNunez/utils.git</span>
 </code><button>Copy</button></pre>
 </blockquote>
-<a id="md:ejemplo-de-uso" class="tsd-anchor"></a><h3><a href="#md:ejemplo-de-uso">Ejemplo de uso</a></h3><p>Ejemplo de uso:</p>
-<pre><code class="language-javascript"><span class="hl-6">import</span><span class="hl-1"> { </span><span class="hl-3">dates</span><span class="hl-1"> } </span><span class="hl-6">from</span><span class="hl-1"> </span><span class="hl-2">&#39;@asofix/utils&#39;</span><span class="hl-1"> </span><span class="hl-7">// con ES modules</span><br/><span class="hl-7">// const { dates } = require(&#39;@asofix/utils&#39;); // con Common.js</span><br/><span class="hl-1">...</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-8">dateToFormat</span><span class="hl-1"> = </span><span class="hl-2">&#39;2000-05-30 10:00:00&#39;</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-8">timezoneUser</span><span class="hl-1"> = </span><span class="hl-2">&#39;Europe/Paris&#39;</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-8">fechaFormateada</span><span class="hl-1"> = </span><span class="hl-3">dates</span><span class="hl-1">.</span><span class="hl-0">formatDateWithTimezone</span><span class="hl-1">(</span><span class="hl-3">dateToFormat</span><span class="hl-1">, </span><span class="hl-3">timezoneUser</span><span class="hl-1">)</span><br/><span class="hl-1">...</span>
+<a id="md:ejemplo-de-uso" class="tsd-anchor"></a><h3><a href="#md:ejemplo-de-uso">Ejemplo de uso</a></h3><pre><code class="language-javascript"><span class="hl-6">import</span><span class="hl-1"> { </span><span class="hl-3">dates</span><span class="hl-1"> } </span><span class="hl-6">from</span><span class="hl-1"> </span><span class="hl-2">&#39;@asofix/utils&#39;</span><span class="hl-1"> </span><span class="hl-7">// con ES modules</span><br/><span class="hl-7">// const { dates } = require(&#39;@asofix/utils&#39;); // con Common.js</span><br/><span class="hl-1">...</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-8">dateToFormat</span><span class="hl-1"> = </span><span class="hl-2">&#39;2000-05-30 10:00:00&#39;</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-8">timezoneUser</span><span class="hl-1"> = </span><span class="hl-2">&#39;Europe/Paris&#39;</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-8">fechaFormateada</span><span class="hl-1"> = </span><span class="hl-3">dates</span><span class="hl-1">.</span><span class="hl-0">formatDateWithTimezone</span><span class="hl-1">(</span><span class="hl-3">dateToFormat</span><span class="hl-1">, </span><span class="hl-3">timezoneUser</span><span class="hl-1">)</span><br/><span class="hl-1">...</span>
 </code><button>Copy</button></pre>
 </div></div>
 <div class="col-sidebar">
@@ -126,6 +135,7 @@
 <ul>
 <li><a href="#md:contenido"><span>Contenido</span></a></li>
 <li><a href="#md:introducción"><span>Introducción</span></a></li>
+<li><a href="#md:links-útiles"><span>Links útiles</span></a></li>
 <li><a href="#md:✍️-desarrollo"><span>✍️ <wbr/>Desarrollo</span></a></li>
 <li>
 <ul>
