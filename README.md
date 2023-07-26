@@ -1,21 +1,18 @@
-# @asofix/utils
-
 ## Contenido
-- [@asofix/utils](#asofixutils)
-  - [Contenido](#contenido)
-  - [Introducción](#introducción)
-  - [Links útiles](#links-útiles)
-  - [✍️ Desarrollo](#️-desarrollo)
-    - [Configuración Inicial](#configuración-inicial)
-      - [Requisitos](#requisitos)
-      - [Pasos iniciales](#pasos-iniciales)
-    - [Subir cambios](#subir-cambios)
-    - [Tests](#tests)
-    - [ESlint](#eslint)
-    - [Documentar](#documentar)
-  - [💅 Usar la librería](#-usar-la-librería)
-    - [Importar como dependencia](#importar-como-dependencia)
-    - [Ejemplo de uso](#ejemplo-de-uso)
+- [Contenido](#contenido)
+- [Introducción](#introducción)
+- [Links útiles](#links-útiles)
+- [✍️ Desarrollo](#️-desarrollo)
+  - [Configuración Inicial](#configuración-inicial)
+    - [Requisitos](#requisitos)
+    - [Pasos iniciales](#pasos-iniciales)
+  - [Subir cambios](#subir-cambios)
+  - [Tests](#tests)
+  - [ESlint](#eslint)
+  - [Documentar](#documentar)
+- [💅 Usar la librería](#-usar-la-librería)
+  - [Importar como dependencia](#importar-como-dependencia)
+  - [Ejemplo de uso](#ejemplo-de-uso)
 
 ## Introducción
 @asofix/utils es una librería creada específicamente para el proyecto asofix y está construida usando Typescript. Facilita la integración y uso de múltiples utilidades en el ecosistema asofix.
