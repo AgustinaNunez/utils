@@ -2,7 +2,7 @@
 - [Contenido](#contenido)
 - [Introducción](#introducción)
 - [Links útiles](#links-útiles)
-- [✍️ Desarrollo](#️-desarrollo)
+- [Desarrollo ✍️](#desarrollo-️)
   - [Configuración Inicial](#configuración-inicial)
     - [Requisitos](#requisitos)
     - [Pasos iniciales](#pasos-iniciales)
@@ -10,7 +10,7 @@
   - [Tests](#tests)
   - [ESlint](#eslint)
   - [Documentar](#documentar)
-- [💅 Usar la librería](#-usar-la-librería)
+- [Usar la librería 💅](#usar-la-librería-)
   - [Importar como dependencia](#importar-como-dependencia)
   - [Ejemplo de uso](#ejemplo-de-uso)
 
@@ -25,7 +25,7 @@ Principales funciones que incluye:
 - [Repositorio inicial](https://github.com/AgustinaNunez/utils)
 - [Ver lista de tareas pendientes](./TODO.md)
 
-## ✍️ Desarrollo
+## Desarrollo ✍️
 ### Configuración Inicial
 Antes de trabajar en la librería, es necesario establecer un entorno adecuado. 
 
@@ -91,7 +91,7 @@ La documentación generada queda en *./dist/docs*. Para visualizar la misma en f
 yarn doc
 ```
 
-## 💅 Usar la librería
+## Usar la librería 💅
 ### Importar como dependencia
 Para importar la última versión disponible de la librería en un repositorio
 ```bash

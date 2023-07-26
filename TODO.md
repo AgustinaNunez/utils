@@ -25,11 +25,11 @@ Este checklist sirve para tener en cuenta todas las tareas pendientes que se nec
     - [ ] Crear repositorio en bitbucket
         - [ ] configuración para uso de repositorio privado
         - [ ] pipelines
-- [ ] Agregar TODOs en los repos:  // TODO: [ID-30769] DEUDA TÉCNICA pasar a librería
+- [ ] Agregar TODOs en los repos: ***// TODO: [ID-30769] DEUDA TÉCNICA pasar a librería***
     - [ ] Catalog
     - [ ] Clients
     - [ ] etc
-- [ ] Agregar métodos encontrados en los repos a la librería: cambiar los TODOs por  // TODO: [ID-30769] DEUDA TÉCNICA usar librería
+- [ ] Agregar métodos encontrados en los repos a la librería: cambiar los TODOs por  ***// TODO: [ID-30769] DEUDA TÉCNICA usar librería***
     - [ ] Catalog
     - [ ] Clients
     - [ ] etc
