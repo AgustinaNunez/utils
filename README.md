@@ -4,6 +4,7 @@
 - [@asofix/utils](#asofixutils)
   - [Contenido](#contenido)
   - [Introducción](#introducción)
+  - [Links útiles](#links-útiles)
   - [✍️ Desarrollo](#️-desarrollo)
     - [Configuración Inicial](#configuración-inicial)
       - [Requisitos](#requisitos)
@@ -18,6 +19,13 @@
 
 ## Introducción
 @asofix/utils es una librería creada específicamente para el proyecto asofix y está construida usando Typescript. Facilita la integración y uso de múltiples utilidades en el ecosistema asofix.
+Principales funciones que incluye:
+- operaciones con fechas
+- cálculos
+
+## Links útiles
+- [ID-30769: Deuda técnica](https://grupotagle.atlassian.net/browse/ID-30769)
+- [Ver lista de tareas pendientes](./TODO.md)
 
 ## ✍️ Desarrollo
 ### Configuración Inicial
@@ -104,7 +112,6 @@ yarn add git+https://github.com/AgustinaNunez/utils.git#v1.6.10
 > ```
 
 ### Ejemplo de uso
-Ejemplo de uso:
 ```javascript
 import { dates } from '@asofix/utils' // con ES modules
 // const { dates } = require('@asofix/utils'); // con Common.js
