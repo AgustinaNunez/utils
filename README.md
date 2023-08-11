@@ -18,11 +18,12 @@
 @asofix/core es una librería creada específicamente para el proyecto asofix y está construida usando Typescript. Facilita la integración y uso de múltiples utilidades en el ecosistema asofix.
 Principales funciones que incluye:
 - operaciones con fechas
-- cálculos
+- cálculos de bonificaciones
 
 ## Links útiles
-- [ID-30769: Deuda técnica](https://grupotagle.atlassian.net/browse/ID-30769)
-- [Repositorio inicial](https://github.com/AgustinaNunez/utils)
+TODO: Unificar deudas técnicas (ponerlas en una épica por ejemplo)
+- [ID-30769: Deuda técnica - Creación y configuración de librería core](https://grupotagle.atlassian.net/browse/ID-30769)
+- [ID-53452: Deuda técnica - Unificar cálculo de bonificaciones](https://grupotagle.atlassian.net/browse/ID-53452)
 - [Ver lista de tareas pendientes](./TODO.md)
 
 ## Desarrollo ✍️
@@ -53,6 +54,8 @@ yarn build
 > 
 
 3. Subir los cambios a **main**
+
+TODO: Validar si es necesario manejar tags
 4. Generar un nuevo tag 
 ```bash
 yarn run tag

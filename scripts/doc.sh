@@ -1,5 +1,5 @@
 #!/bin/bash -eu
 
-rm -rf dist/docs
-typedoc src/ --out dist/docs
-open-cli dist/docs/index.html
+rm -rf docs
+typedoc src/ --out docs
+open-cli docs/index.html
