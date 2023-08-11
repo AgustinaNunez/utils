@@ -15,7 +15,7 @@
   - [Ejemplo de uso](#ejemplo-de-uso)
 
 ## Introducción
-@asofix/utils es una librería creada específicamente para el proyecto asofix y está construida usando Typescript. Facilita la integración y uso de múltiples utilidades en el ecosistema asofix.
+@asofix/core es una librería creada específicamente para el proyecto asofix y está construida usando Typescript. Facilita la integración y uso de múltiples utilidades en el ecosistema asofix.
 Principales funciones que incluye:
 - operaciones con fechas
 - cálculos
@@ -111,8 +111,8 @@ yarn add git+https://github.com/AgustinaNunez/utils.git#v1.6.10
 
 ### Ejemplo de uso
 ```javascript
-import { dates } from '@asofix/utils' // con ES modules
-// const { dates } = require('@asofix/utils'); // con Common.js
+import { dates } from '@asofix/core' // con ES modules
+// const { dates } = require('@asofix/core'); // con Common.js
 ...
 const dateToFormat = '2000-05-30 10:00:00'
 const timezoneUser = 'Europe/Paris'
