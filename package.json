@@ -1,7 +1,7 @@
 {
-  "name": "@asofix/utils",
+  "name": "@asofix/core",
   "version": "1.6.10",
-  "description": "Utils library",
+  "description": "Asofix core library",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c",
     "tag": "sh ./scripts/tag.sh",
