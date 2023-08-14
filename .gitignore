@@ -1,7 +1,7 @@
 # Node artifact files
 node_modules/
 coverage/
-#TODO: revisar si hace falta sacar ./docs del .gitignore
+dist/
 docs/
 
 # Log files

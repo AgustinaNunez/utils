@@ -1,7 +1,5 @@
 ## Contenido
 - [Contenido](#contenido)
-- [Introducción](#introducción)
-- [Links útiles](#links-útiles)
 - [Desarrollo ✍️](#desarrollo-️)
   - [Configuración Inicial](#configuración-inicial)
     - [Requisitos](#requisitos)
@@ -13,18 +11,6 @@
 - [Usar la librería 💅](#usar-la-librería-)
   - [Importar como dependencia](#importar-como-dependencia)
   - [Ejemplo de uso](#ejemplo-de-uso)
-
-## Introducción
-@asofix/core es una librería creada específicamente para el proyecto asofix y está construida usando Typescript. Facilita la integración y uso de múltiples utilidades en el ecosistema asofix.
-Principales funciones que incluye:
-- operaciones con fechas
-- cálculos de bonificaciones
-
-## Links útiles
-TODO: Unificar deudas técnicas (ponerlas en una épica por ejemplo)
-- [ID-30769: Deuda técnica - Creación y configuración de librería core](https://grupotagle.atlassian.net/browse/ID-30769)
-- [ID-53452: Deuda técnica - Unificar cálculo de bonificaciones](https://grupotagle.atlassian.net/browse/ID-53452)
-- [Ver lista de tareas pendientes](./TODO.md)
 
 ## Desarrollo ✍️
 ### Configuración Inicial
@@ -107,15 +93,15 @@ yarn add git+https://github.com/AgustinaNunez/utils.git#v1.6.10
 
 > **⚠️ WORKAROUND**: por el momento, si se quiere utilizar una versión nueva de la librería hay que hacer esto: 
 > ```bash
-> rm -rf ./node_modules/@asofix && \
+> rm -rf ./node_modules/@library && \
 > yarn cache clean && \
 > yarn add git+https://github.com/AgustinaNunez/utils.git
 > ```
 
 ### Ejemplo de uso
 ```javascript
-import { dates } from '@asofix/core' // con ES modules
-// const { dates } = require('@asofix/core'); // con Common.js
+import { dates } from '@library/core' // con ES modules
+// const { dates } = require('@library/core'); // con Common.js
 ...
 const dateToFormat = '2000-05-30 10:00:00'
 const timezoneUser = 'Europe/Paris'
